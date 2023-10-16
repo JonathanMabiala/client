@@ -6,7 +6,11 @@ import {
   DashboardLayout,
   Landing,
   Error,
-  Admin
+  Admin,
+  AddJob,
+  Stats,
+  AllJobs,
+  Profile,
 } from "./pages";
 
 const router = createBrowserRouter([
@@ -27,18 +31,33 @@ const router = createBrowserRouter([
         path: "login",
         element: <Login />,
       },
-     
     ],
   },
   {
     path: "dashboard",
     element: <DashboardLayout />,
-    children:[
+    children: [
+      {
+        index: true,
+        element: <AddJob />,
+      },
+      {
+        path: "stats",
+        element: <Stats />,
+      },
+      {
+        path: "all-jobs",
+        element: <AllJobs />,
+      },
+      {
+        path: "profile",
+        element: <Profile />,
+      },
       {
         path: "admin",
         element: <Admin />,
       },
-    ]
+    ],
   },
 ]);
 const App = () => {
