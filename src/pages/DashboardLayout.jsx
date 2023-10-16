@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Wrapper from "../assets/wrappers/Dashboard";
 import { BigSideBar, Navbar, SmallSideBar } from "../components";
-import {useContext, createContext, useState } from "react";
+import { useContext, createContext, useState } from "react";
 
 const DashBoardContext = createContext();
 const DashboardLayout = () => {
@@ -47,5 +47,5 @@ const DashboardLayout = () => {
     </DashBoardContext.Provider>
   );
 };
-export const useDashboardContext = ()=> useContext(DashBoardContext);
+export const useDashboardContext = () => useContext(DashBoardContext);
 export default DashboardLayout;
