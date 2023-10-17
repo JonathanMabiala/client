@@ -11,7 +11,7 @@ const DashboardLayout = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
 
   const toggleDarkTheme = () => {
-    console.log("toggle dark theme");
+    setIsDarkTheme(!isDarkTheme);
   };
 
   const toggleSideBar = () => {
