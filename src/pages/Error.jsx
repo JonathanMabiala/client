@@ -17,11 +17,10 @@ const Error = () => {
     );
   }
   return (
-    <Wrapper className="">
-      <div className="">
+    <Wrapper>
+      <div >
         <h3>something went wrong</h3>
       </div>
-      <Link to="/">back home</Link>
     </Wrapper>
   );
 };
